@@ -25,6 +25,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.unit.dp
+import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.example.pratikum_baru.ui.Navigation.AlamatNavigasi
 import com.example.pratikum_baru.ui.custumewidget.CstTopAppBar
@@ -126,7 +127,7 @@ fun FormMahasiswa(
     mahasiswaEvent: MahasiswaEvent = MahasiswaEvent(),
     onValueChange: (MahasiswaEvent) -> Unit,
     errorState: FormErrorState = FormErrorState(),
-    modifier: Modifier
+    modifier: Modifier = Modifier
 ) {
     val jenisKelamin = listOf("laki-laki", "perempuan")
     val kelas = listOf("A", "B", "C", "D", "E")
