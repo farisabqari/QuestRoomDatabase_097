@@ -1,5 +1,4 @@
 package com.example.pratikum_baru.ui.custumewidget
-
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
@@ -19,6 +18,7 @@ fun CstTopAppBar(
     onBack: () -> Unit,
     showBackButton: Boolean = true,
     judul: String,
+    modifier: Modifier = Modifier
 ) {
     Box(
         modifier = Modifier
